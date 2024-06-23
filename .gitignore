@@ -1,0 +1,37 @@
+# C++ Build
+build*/
+bin/
+lib/
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Makefile
+
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+
+# IDE specific files
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.xcodeproj
+*.dSYM/
+
+# Miscellaneous
+*.log
+*.swp
+*.DS_Store
