@@ -18,6 +18,8 @@ int main() {
 
     std::string newPort= std::to_string(date->tm_year % 10)+std::to_string(date->tm_mon + 1)+std::to_string(date->tm_mday);
     
+    //转换newPort为int
+    int newPortInt=std::stoi(newPort);
 
     // 读取 JSON 文件
     std::ifstream file("/root/trojan-go/server.json");
@@ -25,7 +27,7 @@ int main() {
     file >> data;
 
     // 替换 local_port 的值为新的端口号
-    data["local_port"] = newPort;
+    data["local_port"] = newPortInt;
 
     // 将修改后的 JSON 写回文件
     std::ofstream outFile("/root/trojan-go/server.json");
